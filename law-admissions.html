@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Admissions 2025 | CUECS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { gold: '#D4AF37', maroon: '#800000', navy: '#000080', light: '#f8fafc' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-maroon text-white flex items-center justify-center font-bold text-xl rounded-full">C</div>
+                <span class="font-serif font-bold text-2xl text-brand-navy">CUECS</span>
+            </a>
+            <div class="hidden md:flex gap-6 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-brand-maroon">Home</a>
+                <a href="mba-admissions.html" class="hover:text-brand-maroon">MBA</a>
+                <a href="law-admissions.html" class="text-brand-maroon font-bold">Law</a>
+                <a href="services.html" class="hover:text-brand-maroon">Services</a>
+                <a href="about.html" class="hover:text-brand-maroon">About</a>
+            </div>
+            <button onclick="toggleModal()" class="bg-brand-navy text-white px-6 py-2 rounded-full font-bold hover:bg-brand-maroon transition">Enquire Now</button>
+        </div>
+    </nav>
+
+    <header class="relative bg-gradient-to-br from-brand-maroon to-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <button onclick="window.location.href='index.html'" class="absolute -top-10 left-4 md:left-0 bg-white/20 hover:bg-white/40 text-white px-4 py-1 rounded-full text-sm flex items-center backdrop-blur-sm transition">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back to Home
+            </button>
+
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4" data-aos="fade-up">Law Admissions 2025</h1>
+            <p class="text-xl text-brand-gold max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+                Secure your seat in Top NLUs, Symbiosis Law, and Jindal Global.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-brand-navy mb-8 border-l-4 border-brand-gold pl-4">Top Law Universities</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up">
+                <div class="h-40 bg-brand-navy flex items-center justify-center">
+                   <i data-lucide="scale" class="w-16 h-16 text-brand-gold"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Jindal Global (JGLS)</h3>
+                    <p class="text-sm text-gray-500 mb-2">Sonipat, Haryana</p>
+                    <div class="flex gap-2 mb-4">
+                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">LSAT India</span>
+                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Top Pvt Law</span>
+                    </div>
+                    <button onclick="toggleModal('Jindal Global')" class="w-full bg-brand-navy text-white py-2 rounded hover:bg-brand-maroon transition">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-40 bg-brand-maroon flex items-center justify-center">
+                   <i data-lucide="book-open" class="w-16 h-16 text-brand-gold"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Symbiosis (SLS)</h3>
+                    <p class="text-sm text-gray-500 mb-2">Pune / Noida</p>
+                    <div class="flex gap-2 mb-4">
+                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">SLAT Exam</span>
+                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">BA LLB / BBA LLB</span>
+                    </div>
+                    <button onclick="toggleModal('SLS Pune')" class="w-full bg-brand-navy text-white py-2 rounded hover:bg-brand-maroon transition">Apply Now</button>
+                </div>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-40 bg-gray-800 flex items-center justify-center">
+                   <i data-lucide="gavel" class="w-16 h-16 text-brand-gold"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Christ Law</h3>
+                    <p class="text-sm text-gray-500 mb-2">Bangalore</p>
+                    <div class="flex gap-2 mb-4">
+                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">CULEE</span>
+                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">High ROI</span>
+                    </div>
+                    <button onclick="toggleModal('Christ Law')" class="w-full bg-brand-navy text-white py-2 rounded hover:bg-brand-maroon transition">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-navy text-white py-8 border-t-4 border-brand-gold mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-serif font-bold mb-4">Contact CUECS</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-6 text-sm text-gray-300">
+                <a href="tel:9115262828" class="hover:text-brand-gold"><i data-lucide="phone" class="inline w-4 h-4 mr-1"></i> 9115262828</a>
+                <a href="tel:6394674695" class="hover:text-brand-gold"><i data-lucide="phone" class="inline w-4 h-4 mr-1"></i> 6394674695</a>
+                <a href="tel:7379311955" class="hover:text-brand-gold"><i data-lucide="phone" class="inline w-4 h-4 mr-1"></i> 7379311955</a>
+            </div>
+             <div class="mt-4">
+                <a href="mailto:cuecs.01@gmail.com" class="text-brand-gold hover:underline">cuecs.01@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="enquireModal" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md p-6 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x"></i></button>
+            <h3 class="text-2xl font-bold text-brand-navy mb-4">Law Admission Enquiry</h3>
+            <form>
+                <input type="text" placeholder="Student Name" class="w-full p-3 border rounded mb-4">
+                <input type="tel" placeholder="Mobile Number" class="w-full p-3 border rounded mb-4">
+                <button type="button" onclick="alert('Request Sent to CUECS Team!')" class="w-full bg-brand-maroon text-white font-bold py-3 rounded hover:bg-brand-navy">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init();
+        function toggleModal(interest) {
+            document.getElementById('enquireModal').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

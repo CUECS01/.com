@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: [https://cuecs-edu.com/sitemap.xml](https://cuecs-edu.com/sitemap.xml)

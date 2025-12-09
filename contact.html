@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CUECS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            maroon: '#800000',
+                            navy: '#000080',
+                            dark: '#0f172a',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans overflow-x-hidden">
+
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-maroon text-white flex items-center justify-center font-bold text-xl rounded-full">C</div>
+                <span class="font-serif font-bold text-2xl text-brand-navy">CUECS</span>
+            </a>
+            <div class="hidden md:flex gap-6 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-brand-maroon">Home</a>
+                <a href="mba-admissions.html" class="hover:text-brand-maroon">MBA</a>
+                <a href="law-admissions.html" class="hover:text-brand-maroon">Law</a>
+                <a href="services.html" class="hover:text-brand-maroon">Services</a>
+                <a href="contact.html" class="text-brand-maroon font-bold border-b-2 border-brand-maroon">Contact</a>
+            </div>
+            <button class="md:hidden text-brand-navy"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <header class="relative hero-gradient text-white py-24 text-center">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <button onclick="window.location.href='index.html'" class="absolute top-6 left-6 bg-white/20 px-4 py-1 rounded-full flex items-center text-sm hover:bg-white/40 transition z-20">
+            <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Home
+        </button>
+
+        <div class="relative z-10 max-w-3xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4" data-aos="zoom-in">Get in Touch</h1>
+            <p class="text-brand-gold text-lg" data-aos="fade-up" data-aos-delay="100">
+                We are here to answer your questions about admissions, colleges, and career paths.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16 -mt-16 relative z-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <div class="space-y-8" data-aos="fade-right">
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-brand-gold">
+                    <h3 class="text-2xl font-bold text-brand-navy mb-6 border-b pb-2">Contact Information</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Helplines</p>
+                        
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-brand-maroon hover:shadow-md transition group">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-brand-goldLight text-brand-maroon flex items-center justify-center mr-4">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Admissions Desk 1</p>
+                                    <p class="font-bold text-brand-navy text-lg">91152 62828</p>
+                                </div>
+                            </div>
+                            <a href="tel:9115262828" class="bg-white text-brand-maroon border border-brand-maroon px-3 py-1 rounded-full text-xs font-bold group-hover:bg-brand-maroon group-hover:text-white transition">Call</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-brand-maroon hover:shadow-md transition group">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-brand-goldLight text-brand-maroon flex items-center justify-center mr-4">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Admissions Desk 2</p>
+                                    <p class="font-bold text-brand-navy text-lg">63946 74695</p>
+                                </div>
+                            </div>
+                            <a href="tel:6394674695" class="bg-white text-brand-maroon border border-brand-maroon px-3 py-1 rounded-full text-xs font-bold group-hover:bg-brand-maroon group-hover:text-white transition">Call</a>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-brand-maroon hover:shadow-md transition group">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-brand-goldLight text-brand-maroon flex items-center justify-center mr-4">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Student Support</p>
+                                    <p class="font-bold text-brand-navy text-lg">73793 11955</p>
+                                </div>
+                            </div>
+                            <a href="tel:7379311955" class="bg-white text-brand-maroon border border-brand-maroon px-3 py-1 rounded-full text-xs font-bold group-hover:bg-brand-maroon group-hover:text-white transition">Call</a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-lucide="mail" class="w-5 h-5 text-brand-gold mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email Us</h4>
+                                <a href="mailto:cuecs.01@gmail.com" class="text-brand-maroon hover:underline">cuecs.01@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Headquarters</h4>
+                                <p class="text-gray-600 text-sm">Office 102, CUECS Building,<br>Kanpur / Delhi NCR, India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-navy p-8 rounded-2xl shadow-lg text-white text-center">
+                    <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+                    <div class="flex justify-center gap-6">
+                        <a href="https://wa.me/919115262828" class="group flex flex-col items-center gap-2">
+                            <div class="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-xs text-gray-300 group-hover:text-white">WhatsApp</span>
+                        </a>
+
+                        <a href="#" class="group flex flex-col items-center gap-2">
+                            <div class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                                <i data-lucide="instagram" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-xs text-gray-300 group-hover:text-white">Instagram</span>
+                        </a>
+
+                        <a href="#" class="group flex flex-col items-center gap-2">
+                            <div class="w-12 h-12 bg-[#0077b5] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                                <i data-lucide="linkedin" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-xs text-gray-300 group-hover:text-white">LinkedIn</span>
+                        </a>
+
+                        <a href="mailto:cuecs.01@gmail.com" class="group flex flex-col items-center gap-2">
+                            <div class="w-12 h-12 bg-white text-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs text-gray-300 group-hover:text-white">Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 lg:p-10 rounded-2xl shadow-2xl border border-gray-100" data-aos="fade-left">
+                <h2 class="text-2xl font-serif font-bold text-brand-navy mb-2">Book a Free Session</h2>
+                <p class="text-gray-500 mb-8">Fill the form below and our senior counsellors will contact you within 24 hours.</p>
+                
+                <form onsubmit="event.preventDefault(); alert('Thank you! We will call you at 9115262828 shortly.');" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-maroon focus:border-transparent transition" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-maroon focus:border-transparent transition" placeholder="+91">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">City</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-maroon focus:border-transparent transition" placeholder="Your City">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Interested Course</label>
+                        <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-maroon focus:border-transparent transition text-gray-600">
+                            <option>MBA / PGDM</option>
+                            <option>Law (BA LLB / LLM)</option>
+                            <option>BBA / IPM</option>
+                            <option>Study Abroad</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Message (Optional)</label>
+                        <textarea rows="4" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-maroon focus:border-transparent transition" placeholder="Tell us about your academic background..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-4 rounded-xl hover:bg-brand-navy transition shadow-lg flex items-center justify-center">
+                        Send Enquiry <i data-lucide="send" class="ml-2 w-4 h-4"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-navy text-white py-8 border-t-4 border-brand-gold mt-12 text-center">
+        <p class="text-sm text-gray-300">© 2025 CUECS. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init();
+    </script>
+</body>
+</html>
