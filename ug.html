@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>UG Admissions 2026 | Top 50 B.Tech & B.E. Private Colleges | CUECS</title>
+    <meta name="description" content="Expert guidance for B.Tech and B.E. admissions 2026. Secure seats in BITS, VIT, MIT-WPU, BVP, and top private engineering colleges in India.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 
+                            gold: '#D4AF37', 
+                            goldLight: '#F3E5AB', 
+                            maroon: '#800000', 
+                            navy: '#000080', 
+                            dark: '#0f172a', 
+                            light: '#f8fafc' 
+                        }
+                    },
+                    fontFamily: { 
+                        serif: ['Playfair Display', 'serif'], 
+                        sans: ['Inter', 'sans-serif'] 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
+        .modal { opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out; }
+        .modal.active { opacity: 1; visibility: visible; }
+        .college-card img { transition: transform 0.8s ease; }
+        .college-card:hover img { transform: scale(1.1); }
+        .badge-premium { background: linear-gradient(to right, #D4AF37, #F3E5AB); color: #800000; }
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-gray-800 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img src="logo.png" alt="CUECS Logo" class="h-10 w-auto mr-2">
+                    <span class="font-serif font-bold text-2xl text-brand-navy tracking-tight">CUECS</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Home</a>
+                    
+                    <div class="relative group py-4">
+                        <button class="flex items-center text-brand-maroon font-bold border-b-2 border-brand-maroon transition">
+                            Admissions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+                            <a href="ug.html" class="block px-6 py-3 text-sm font-semibold text-brand-maroon bg-brand-goldLight transition">Undergraduate (UG)</a>
+                            <div class="relative">
+                                <button class="peer w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
+                                    Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                </button>
+                                <div class="absolute top-0 left-full ml-2 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 opacity-0 invisible -translate-x-4 peer-hover:opacity-100 peer-hover:visible peer-hover:translate-x-0 transition-all duration-300">
+                                    <a href="mba-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">MBA / PGDM</a>
+                                    <a href="mtech.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">M.Tech Specialization</a>
+                                </div>
+                            </div>
+                            <a href="law-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Legal Excellence</a>
+                            <a href="medical-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Medical Sciences</a>
+                        </div>
+                    </div>
+                    
+                    <a href="services.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Services</a>
+                    <a href="exams.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Exams</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">About Us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <button onclick="toggleSearch()" class="text-gray-600 hover:text-brand-maroon transition"><i data-lucide="search" class="w-6 h-6"></i></button>
+                    <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">Free Counselling</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 hero-gradient text-white text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6" data-aos="zoom-in">UG Admissions 2026</h1>
+            <p class="text-xl text-brand-goldLight font-medium" data-aos="fade-up" data-aos-delay="200">
+                Strategic Admission Guidance for Top 50 B.Tech & B.E. Private Universities in India.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-10 border-l-8 border-brand-gold pl-4" data-aos="fade-right">
+            Premier Private Engineering Institutes
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
+            <script>
+                const premierUg = [
+                    { name: "BITS Pilani", loc: "Rajasthan", pkg: "30 LPA", tag: "BITSAT", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
+                    { name: "BITS Pilani", loc: "Goa", pkg: "28 LPA", tag: "BITSAT", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
+                    { name: "VIT Vellore", loc: "Tamil Nadu", pkg: "12 LPA", tag: "VITEEE", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "MIT Manipal (MAHE)", loc: "Karnataka", pkg: "14 LPA", tag: "MET", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "IIIT Hyderabad (Pvt)", loc: "Telangana", pkg: "32 LPA", tag: "JEE/PGEE", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
+                    { name: "Thapar Institute (TIET)", loc: "Patiala", pkg: "14 LPA", tag: "JEE/Merit", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" }
+                ];
+
+                document.write(premierUg.map(c => `
+                    <div class="college-card bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 group" data-aos="fade-up">
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="${c.img}?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 badge-premium px-3 py-1 rounded-full text-[10px] font-bold shadow-lg uppercase tracking-widest">TOP TIER</div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="font-bold text-2xl text-brand-navy mb-1 leading-tight">${c.name}</h3>
+                            <p class="text-sm text-gray-500 mb-4"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                            <div class="bg-brand-light p-3 rounded-2xl mb-6">
+                                <p class="text-brand-maroon font-bold text-sm">Avg Package: ${c.pkg}</p>
+                                <p class="text-[10px] text-gray-400 uppercase font-bold tracking-tighter">Exam: ${c.tag}</p>
+                            </div>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-3 bg-brand-maroon text-white font-bold rounded-xl hover:bg-brand-navy transition duration-300">Admission Guidance</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-10 border-l-8 border-brand-maroon pl-4" data-aos="fade-right">
+            Maharashtra Focus: Top Private B.Tech Colleges
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+            <script>
+                const mhUg = [
+                    { name: "MIT-WPU Pune", loc: "Pune", tag: "WPU-CET", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
+                    { name: "Bharati Vidyapeeth (BVP)", loc: "Pune", tag: "BVP CET", img: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3" },
+                    { name: "DY Patil Inst. of Tech", loc: "Pimpri, Pune", tag: "CET/JEE", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
+                    { name: "Vishwakarma Inst. (VIT)", loc: "Pune", tag: "CET/JEE", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
+                    { name: "NMIMS School of Engg", loc: "Mumbai", tag: "NPAT/NMIMS", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
+                    { name: "KJ Somaiya Engg", loc: "Mumbai", tag: "CET/JEE", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "MIT-ADT University", loc: "Loni, Pune", tag: "Merit/JEE", img: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da" },
+                    { name: "Symbiosis (SIT) Pune", loc: "Pune", tag: "SITEEE", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85" }
+                ];
+
+                document.write(mhUg.map(c => `
+                    <div class="college-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 group" data-aos="fade-up">
+                        <div class="h-36 overflow-hidden">
+                            <img src="${c.img}?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-brand-navy text-sm mb-1 leading-tight">${c.name}</h3>
+                            <p class="text-[10px] text-gray-500 mb-3"><i data-lucide="map-pin" class="w-2 h-2 inline"></i> ${c.loc}</p>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-2 bg-gray-50 text-brand-maroon border border-brand-maroon font-bold rounded-lg hover:bg-brand-maroon hover:text-white transition text-xs uppercase">Enquire</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-10 border-l-8 border-brand-gold pl-4" data-aos="fade-right">
+            Top Private B.Tech / B.E. Universities Across India
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <script>
+                const nationalUg = [
+                    { name: "SRM (KTR)", loc: "Chennai" }, { name: "Amrita Vishwa", loc: "Coimbatore" }, { name: "Manipal Jaipur", loc: "Jaipur" }, { name: "RV College (RVCE)", loc: "Bangalore" },
+                    { name: "PES University", loc: "Bangalore" }, { name: "BMS College", loc: "Bangalore" }, { name: "MS Ramaiah (MSRIT)", loc: "Bangalore" }, { name: "Shiv Nadar Univ", loc: "Greater Noida" },
+                    { name: "Bennett University", loc: "Noida" }, { name: "KIIT University", loc: "Bhubaneswar" }, { name: "SASTRA Univ", loc: "Thanjavur" }, { name: "Amity School", loc: "Noida" },
+                    { name: "LPU University", loc: "Punjab" }, { name: "Chandigarh Univ", loc: "Punjab" }, { name: "Chitkara Univ", loc: "Punjab" }, { name: "UPES Dehradun", loc: "Dehradun" },
+                    { name: "Graphic Era", loc: "Dehradun" }, { name: "Galgotias Univ", loc: "Greater Noida" }, { name: "Nirma University", loc: "Ahmedabad" }, { name: "PDPU", loc: "Gandhinagar" },
+                    { name: "DAIICT", loc: "Gandhinagar" }, { name: "KL University", loc: "Vijayawada" }, { name: "GITAM Univ", loc: "Visakhapatnam" }, { name: "VNR Vignana Jyothi", loc: "Hyderabad" },
+                    { name: "CBIT Hyderabad", loc: "Hyderabad" }, { name: "Jain University", loc: "Bangalore" }, { name: "Reva University", loc: "Bangalore" }, { name: "Manav Rachna", loc: "Faridabad" },
+                    { name: "Siksha 'O' Anusandhan", loc: "Bhubaneswar" }, { name: "BITS Hyderabad", loc: "Hyderabad" }, { name: "BITS Goa", loc: "Goa" }, { name: "Alliance Univ", loc: "Bangalore" },
+                    { name: "Techno India Univ", loc: "Kolkata" }, { name: "Jaypee (JIIT)", loc: "Noida" }, { name: "Sharda University", loc: "Greater Noida" }, { name: "IIMT University", loc: "Meerut" }
+                ];
+
+                document.write(nationalUg.map(c => `
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-brand-navy text-sm mb-1">${c.name}</h4>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-widest"><i data-lucide="map-pin" class="w-2 h-2 inline"></i> ${c.loc}</p>
+                        <button onclick="toggleModal('${c.name}')" class="mt-3 text-[10px] font-bold text-brand-maroon hover:underline">GET ADMISSION HELP &rarr;</button>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark text-white pt-16 pb-8 border-t-4 border-brand-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="Logo" class="h-10 w-auto mr-2 bg-white p-1 rounded">
+                        <span class="font-serif font-bold text-xl">CUECS</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Career Universe Education Consultancy Services. India's trusted choice for B.Tech & B.E. admission guidance.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">UG Programs</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">B.Tech / B.E.</a></li>
+                        <li><a href="#" class="hover:text-white transition">BBA Admissions</a></li>
+                        <li><a href="law-admissions.html" class="hover:text-white transition">5-Year Law (BA LLB)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Get in Touch</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><i data-lucide="phone" class="w-4 h-4 mr-2 text-brand-gold inline"></i> 91152 62828</li>
+                        <li><i data-lucide="mail" class="w-4 h-4 mr-2 text-brand-gold inline"></i> cuecs.01@gmail.com</li>
+                        <li><i data-lucide="map-pin" class="w-4 h-4 mr-2 text-brand-gold inline"></i> Pune, Mumbai, Delhi, Kanpur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">© 2025 CUECS Admissions Guidance. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div id="search-modal" class="fixed inset-0 z-[60] bg-black/70 flex items-center justify-center modal backdrop-blur-sm">
+        <div class="bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 relative m-4 text-center">
+            <button onclick="toggleSearch()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-bold text-brand-navy mb-4">Search B.Tech Colleges</h3>
+            <input type="text" placeholder="Ex: BITS Pilani, MIT-WPU, JEE..." class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-maroon outline-none text-lg">
+        </div>
+    </div>
+
+    <div id="enquireModal" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md p-6 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-bold text-brand-navy mb-1 leading-tight" id="collegeName">B.Tech Admission Enquiry</h3>
+            <p class="text-xs text-gray-500 mb-6">Eligible for JEE / State CET 2026?</p>
+            <form id="contactForm" class="space-y-4">
+                <input type="text" placeholder="Candidate Name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+                <input type="tel" placeholder="Contact Number" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+                <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">Get Eligibility Review</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        // Slowing down animations for premium feel
+        AOS.init({ duration: 1200, once: true });
+
+        function toggleModal(college = 'UG B.Tech Admissions') {
+            const modal = document.getElementById('enquireModal');
+            modal.classList.toggle('hidden');
+            document.getElementById('collegeName').innerText = college;
+        }
+
+        function toggleSearch() { document.getElementById('search-modal').classList.toggle('active'); }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('shadow-md', 'bg-white');
+            else nav.classList.remove('shadow-md');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert("Thank you! CUECS Engineering team will contact you shortly.");
+            toggleModal();
+        });
+    </script>
+</body>
+</html>

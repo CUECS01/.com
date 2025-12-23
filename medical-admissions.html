@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Medical Admissions 2026 | Top 60+ Medical Colleges India & International | CUECS</title>
+    <meta name="description" content="Expert guidance for MBBS, MD, and MS admissions 2026. Admission support for top private medical colleges in India and abroad (Georgia, Russia, Uzbekistan).">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 
+                            gold: '#D4AF37', 
+                            goldLight: '#F3E5AB', 
+                            maroon: '#800000', 
+                            navy: '#000080', 
+                            dark: '#0f172a', 
+                            light: '#f8fafc' 
+                        }
+                    },
+                    fontFamily: { 
+                        serif: ['Playfair Display', 'serif'], 
+                        sans: ['Inter', 'sans-serif'] 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
+        .modal { opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out; }
+        .modal.active { opacity: 1; visibility: visible; }
+        .med-badge { background: rgba(128, 0, 0, 0.1); color: #800000; border: 1px solid rgba(128, 0, 0, 0.2); }
+        .college-card img { transition: transform 0.7s ease; }
+        .college-card:hover img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-gray-800 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img src="logo.png" alt="CUECS Logo" class="h-10 w-auto mr-2">
+                    <span class="font-serif font-bold text-2xl text-brand-navy tracking-tight">CUECS</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Home</a>
+                    <div class="relative group py-4">
+                        <button class="flex items-center text-brand-maroon font-bold border-b-2 border-brand-maroon transition">
+                            Admissions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+                            <a href="ug.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Undergraduate (UG)</a>
+                            <div class="relative">
+                                <button class="peer w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
+                                    Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                </button>
+                                <div class="absolute top-0 left-full ml-2 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 opacity-0 invisible -translate-x-4 peer-hover:opacity-100 peer-hover:visible peer-hover:translate-x-0 transition-all duration-300">
+                                    <a href="mba-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">MBA / PGDM</a>
+                                    <a href="mtech.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">M.Tech Specialization</a>
+                                </div>
+                            </div>
+                            <a href="law-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Legal Excellence</a>
+                            <a href="medical-admissions.html" class="block px-6 py-3 text-sm font-semibold text-brand-maroon bg-brand-goldLight transition">Medical Sciences</a>
+                        </div>
+                    </div>
+                    <a href="services.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Services</a>
+                    <a href="exams.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Exams</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">About Us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <button onclick="toggleSearch()" class="text-gray-600 hover:text-brand-maroon transition"><i data-lucide="search" class="w-6 h-6"></i></button>
+                    <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">Free Counselling</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 hero-gradient text-white text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6" data-aos="zoom-in">Medical Admissions 2026</h1>
+            <p class="text-xl text-brand-goldLight font-medium" data-aos="fade-up" data-aos-delay="200">
+                Guaranteed admission guidance for MBBS, MD, and MS in India and Top International Universities.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 border-l-8 border-brand-gold pl-4 flex items-center gap-3" data-aos="fade-right">
+            <i data-lucide="heart-pulse" class="text-brand-maroon"></i> Top 40 Private Medical Colleges in India
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <script>
+                const indiaMedColleges = [
+                    { name: "Kasturba Medical College (KMC)", loc: "Manipal", tag: "Top Rated", fee: "Premium", img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d" },
+                    { name: "Christian Medical College (CMC)", loc: "Vellore", tag: "Best ROI", fee: "Subsidy", img: "https://images.unsplash.com/photo-1586773860418-d319a39ec557" },
+                    { name: "St. John's Medical College", loc: "Bangalore", tag: "Legacy", fee: "Moderate", img: "https://images.unsplash.com/photo-1516549655169-df83a0774514" },
+                    { name: "DY Patil Medical College", loc: "Pune", tag: "Modern Infra", fee: "High", img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d" },
+                    { name: "Hamdard Inst. of Medical Sciences", loc: "Delhi", tag: "Central Location", fee: "Moderate", img: "https://images.unsplash.com/photo-1516549655169-df83a0774514" },
+                    { name: "M.S. Ramaiah Medical College", loc: "Bangalore", tag: "Top Corporate", fee: "Moderate", img: "https://images.unsplash.com/photo-1586773860418-d319a39ec557" },
+                    { name: "SRM Medical College", loc: "Chennai", tag: "Deemed Univ", fee: "Moderate", img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d" },
+                    { name: "Amrita School of Medicine", loc: "Kochi", tag: "Clinical Focus", fee: "Moderate", img: "https://images.unsplash.com/photo-1516549655169-df83a0774514" },
+                    { name: "Kalinga Inst. of Medical Sciences", loc: "Bhubaneswar", tag: "High Patient Load", fee: "Moderate", img: "https://images.unsplash.com/photo-1586773860418-d319a39ec557" },
+                    { name: "Mahatma Gandhi Medical College", loc: "Jaipur", tag: "Emerging", fee: "Moderate", img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d" },
+                    // Adding 30 more for the list
+                    { name: "MGM Medical College", loc: "Mumbai" }, { name: "Bharati Vidyapeeth", loc: "Pune" }, { name: "JSS Medical", loc: "Mysore" }, { name: "KS Hegde", loc: "Mangalore" },
+                    { name: "Sri Ramachandra", loc: "Chennai" }, { name: "PSG Institute", loc: "Coimbatore" }, { name: "Era's Medical", loc: "Lucknow" }, { name: "School of Med", loc: "Wardha" },
+                    { name: "Teerthanker Mahaveer", loc: "Moradabad" }, { name: "Santosh Medical", loc: "Ghaziabad" }, { name: "Sharda University", loc: "Greater Noida" }, { name: "Geetanjali Medical", loc: "Udaipur" },
+                    { name: "NIMS University", loc: "Jaipur" }, { name: "Smt. NHL Municipal", loc: "Ahmedabad" }, { name: "Padmashree DY Patil", loc: "Navi Mumbai" }, { name: "Jawahar Medical", loc: "Belgaum" },
+                    { name: "SDM College", loc: "Dharwad" }, { name: "Azeeza Institute", loc: "Kollam" }, { name: "Sree Gokulam", loc: "Venjaramoodu" }, { name: "Pushpagiri Institute", loc: "Thiruvalla" },
+                    { name: "Jitendra Chauhan", loc: "Mumbai" }, { name: "Lords Universal", loc: "Mumbai" }, { name: "Sinhgad Medical", loc: "Pune" }, { name: "Balaji Medical", loc: "Chennai" },
+                    { name: "Saveetha Medical", loc: "Chennai" }, { name: "Chettinad Hospital", loc: "Kelambakkam" }, { name: "Meenakshi Medical", loc: "Kanchipuram" }, { name: "Vinayaka Mission", loc: "Salem" },
+                    { name: "Sumandeep Vidyapeeth", loc: "Vadodara" }, { name: "Karad Medical", loc: "Satara" }
+                ];
+
+                document.write(indiaMedColleges.slice(0, 10).map(c => `
+                    <div class="college-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 group" data-aos="fade-up">
+                        <div class="h-44 relative overflow-hidden bg-brand-navy flex items-center justify-center">
+                            <img src="${c.img}?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover opacity-80">
+                            <div class="absolute top-4 right-4 bg-brand-maroon text-brand-gold px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">${c.fee} FEE</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-brand-navy mb-1 leading-tight">${c.name}</h3>
+                            <p class="text-sm text-gray-500 mb-4 font-medium"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-[10px] med-badge px-2 py-1 rounded font-bold uppercase">${c.tag}</span>
+                            </div>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-3 bg-white border-2 border-brand-maroon text-brand-maroon font-bold rounded-xl hover:bg-brand-maroon hover:text-white transition">Admission Details</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+            <script>
+                document.write(indiaMedColleges.slice(10).map(c => `
+                    <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-brand-navy text-sm mb-1">${c.name}</h4>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-widest"><i data-lucide="map-pin" class="w-2 h-2 inline"></i> ${c.loc}</p>
+                        <button onclick="toggleModal('${c.name}')" class="mt-3 text-[10px] font-bold text-brand-maroon hover:underline">ENQUIRE &rarr;</button>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 border-l-8 border-brand-maroon pl-4 flex items-center gap-3" data-aos="fade-right">
+            <i data-lucide="globe" class="text-brand-maroon"></i> Study MBBS Abroad: 20 Top International Private Colleges
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <script>
+                const internationalMed = [
+                    { name: "Tbilisi State Medical", loc: "Georgia" }, { name: "University of Georgia", loc: "Tbilisi" }, { name: "Caucasus University", loc: "Georgia" }, { name: "Petre Shotadze", loc: "Tbilisi" },
+                    { name: "Kazan Federal", loc: "Russia" }, { name: "Crimea Federal", loc: "Russia" }, { name: "Mari State", loc: "Russia" }, { name: "First Moscow State", loc: "Russia" },
+                    { name: "Samarkand State", loc: "Uzbekistan" }, { name: "Tashkent Medical", loc: "Uzbekistan" }, { name: "Asian Med Inst", loc: "Kyrgyzstan" }, { name: "Osh State", loc: "Kyrgyzstan" },
+                    { name: "Texila American", loc: "Guyana" }, { name: "Lincoln University", loc: "Malaysia" }, { name: "MAHSA Univ", loc: "Malaysia" }, { name: "Taylor's Univ", loc: "Malaysia" },
+                    { name: "Dhaka Medical", loc: "Bangladesh" }, { name: "Kumudini Women", loc: "Bangladesh" }, { name: "Our Lady Univ", loc: "Philippines" }, { name: "AMA College", loc: "Philippines" }
+                ];
+
+                document.write(internationalMed.map(c => `
+                    <div class="bg-brand-navy p-6 rounded-2xl text-white shadow-lg hover:shadow-2xl transition group relative overflow-hidden">
+                        <div class="absolute -bottom-2 -right-2 opacity-10 group-hover:scale-125 transition duration-700">
+                             <i data-lucide="plane" class="w-24 h-24"></i>
+                        </div>
+                        <h4 class="font-bold text-brand-gold text-lg mb-2">${c.name}</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest mb-6"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                        <button onclick="toggleModal('${c.name}')" class="text-xs font-bold border border-brand-gold text-brand-gold px-4 py-2 rounded-lg hover:bg-brand-gold hover:text-brand-navy transition">Get Eligibility Info</button>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark text-white pt-16 pb-8 border-t-4 border-brand-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="logo.png" alt="Logo" class="h-10 w-auto mr-2 bg-white p-1 rounded">
+                        <span class="font-serif font-bold text-xl tracking-tight">CUECS</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Career Universe Education Consultancy Services. Your trusted partner for securing medical seats globally.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Medical Programs</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">MBBS in India</a></li>
+                        <li><a href="#" class="hover:text-white transition">MBBS Abroad</a></li>
+                        <li><a href="#" class="hover:text-white transition">MD / MS Specializations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Get in Touch</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2 text-brand-gold"></i> 91152 62828</li>
+                        <li class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 text-brand-gold"></i> cuecs.01@gmail.com</li>
+                        <li class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2 text-brand-gold"></i> Pune, Mumbai, Delhi, Kanpur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">© 2025 CUECS. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div id="enquireModal" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-md p-6 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-bold text-brand-navy mb-1 leading-tight" id="collegeName">Medical Enquiry</h3>
+            <p class="text-xs text-gray-500 mb-6">Eligible for NEET 2026?</p>
+            <form id="contactForm" class="mt-4 space-y-4">
+                <input type="text" id="interest" hidden>
+                <input type="text" placeholder="Candidate Name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+                <input type="tel" placeholder="Mobile Number" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+                <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">Book Free Counselling</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="search-modal" class="fixed inset-0 z-[60] bg-black/70 flex items-center justify-center modal backdrop-blur-sm">
+        <div class="bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 relative m-4">
+            <button onclick="toggleSearch()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 class="text-2xl font-bold text-brand-navy mb-4">Search Medical Colleges</h3>
+            <input type="text" placeholder="Ex: KMC Manipal, MBBS Abroad, NEET..." class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-maroon outline-none text-lg">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ duration: 1000, once: true });
+
+        function toggleModal(college = 'Medical Admissions') {
+            const modal = document.getElementById('enquireModal');
+            modal.classList.toggle('hidden');
+            document.getElementById('collegeName').innerText = college;
+        }
+
+        function toggleSearch() { document.getElementById('search-modal').classList.toggle('active'); }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('shadow-md', 'bg-white');
+            else nav.classList.remove('shadow-md');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert("Thank you! CUECS Medical Admission team will contact you shortly.");
+            toggleModal();
+        });
+    </script>
+</body>
+</html>
