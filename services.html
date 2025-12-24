@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Premium Services | CUECS</title>
+    <title>About CUECS | Your Career Architects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,15 +26,6 @@
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
                     }
                 }
             }
@@ -42,26 +33,149 @@
     </script>
     <style>
         .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.3); }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans overflow-x-hidden">
-    
-    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2">
-                <img src="logo.png" alt="CUECS" class="h-12 w-auto object-contain">
-                <span class="font-serif font-bold text-2xl text-brand-navy">CUECS</span>
-            </a>
-            <div class="hidden md:flex gap-6 font-medium text-gray-600">
-                <a href="index.html" class="hover:text-brand-maroon transition">Home</a>
-                <a href="mba-admissions.html" class="hover:text-brand-maroon transition">MBA</a>
-                <a href="law-admissions.html" class="hover:text-brand-maroon transition">Law</a>
-                <a href="services.html" class="text-brand-maroon font-bold border-b-2 border-brand-maroon">Services</a>
-                <a href="exams.html" class="hover:text-brand-maroon transition">Exams</a>
-                <a href="about.html" class="hover:text-brand-maroon transition">About</a>
+<body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img src="logo.png" alt="CUECS Logo" class="h-12 w-auto object-contain">
+                    <span class="font-serif font-bold text-2xl text-brand-navy tracking-tight">CUECS</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-brand-maroon font-semibold border-b-2 border-brand-maroon">Home</a>
+                    
+                    <!-- Admissions Dropdown -->
+                    <div class="relative group py-4">
+                        <button class="flex items-center text-slate-600 hover:text-brand-maroon font-bold text-sm tracking-widest uppercase transition-colors">
+                            Admissions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4
+                                    opacity-0 invisible translate-y-4 transition-all duration-300
+                                    group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+
+                            <a href="ug.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Undergraduate (UG)</a>
+                            
+                            <!-- Nested PG Dropdown -->
+                        <div class="relative">
+                            
+
+                            <!-- PG Submenu -->
+                            
+                            <div class="relative group/pg"> <button class="w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
+                                    Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                </button>
+                                
+                                <div class="absolute top-0 left-full ml-0 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 
+                                            opacity-0 invisible -translate-x-4 
+                                            group-hover/pg:opacity-100 group-hover/pg:visible group-hover/pg:translate-x-0 
+                                            transition-all duration-300">
+                                    <a href="mba-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">MBA / PGDM</a>
+                                    <a href="mtech.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">M.Tech Specialization</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <a href="law-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Legal Excellence</a>
+                            <a href="medical-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Medical Sciences</a>
+                        </div>
+                    </div>
+                    
+                    <a href="services.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Services</a>
+                    <a href="exams.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Exams</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">About Us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Contact</a>
+                </div>
+
+                <!-- Icons & CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    
+                    <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">
+                        Free Counselling
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-brand-maroon focus:outline-none">
+                        <i data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
             </div>
-            <a href="contact.html" class="bg-brand-navy text-white px-6 py-2 rounded-full font-bold hover:bg-brand-maroon transition shadow-lg">Contact Us</a>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white rounded-t-2xl shadow-2xl border-t border-gray-200 overflow-hidden">
+
+            <!-- Home -->
+            <a href="index.html"
+            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
+                Home
+            </a>
+
+            <!-- Admissions -->
+            <div class="border-t border-gray-200">
+                <button
+                    onclick="document.getElementById('mobile-submenu').classList.toggle('hidden')"
+                    class="w-full flex justify-between items-center px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
+                    <span>Admissions</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500"></i>
+                </button>
+
+                <!-- Submenu -->
+                <div id="mobile-submenu" class="hidden bg-gray-50">
+                    <a href="ug.html"
+                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
+                        Undergraduate (UG)
+                    </a>
+                    <a href="mba-admissions.html"
+                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
+                        MBA / PGDM / MMS
+                    </a>
+                    <a href="mtech.html"
+                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
+                        M.Tech / B.Tech
+                    </a>
+                    <a href="law-admissions.html"
+                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
+                        Law Programs
+                    </a>
+                    <a href="medical-admissions.html"
+                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
+                        Medical Sciences
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <a href="services.html"
+            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
+                Services
+            </a>
+            <a href="exams.html"
+            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
+                Exams
+            </a>
+            <a href="about.html"
+            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
+                About Us
+            </a>
+            <!-- Contact -->
+            <a href="contact.html"
+            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
+                Contact
+            </a>
+
+            
         </div>
     </nav>
 
@@ -289,6 +403,20 @@
             duration: 800,
             once: true,
             offset: 50
+        });
+        // ADD THIS FUNCTION BELOW
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
         });
     </script>
 </body>
