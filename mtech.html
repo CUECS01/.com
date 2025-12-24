@@ -344,19 +344,52 @@
             <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
             <h3 class="text-2xl font-bold text-brand-navy mb-1">M.Tech Guidance</h3>
             <p class="text-sm text-gray-500 mb-6">Eligible for GATE/Non-GATE admissions?</p>
-            <form id="contactForm">
-                <input type="text" id="interest" hidden>
+            <form
+                id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                >
+
+                <!-- Web3Forms Key -->
+                <input type="hidden" name="access_key" value="89435dad-4091-4b68-b211-73a34fe94504">
+
+                <!-- Selected College -->
+                <input type="hidden" name="college" id="interest">
+
+                <!-- Optional clean redirect -->
+                <input type="hidden" name="redirect" value="https://yourwebsite.com/mtech.html?success=true">
+
                 <div class="space-y-4">
-                    <input type="text" placeholder="Full Name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                    <input type="tel" placeholder="Contact Number" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                    <select class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none text-gray-600">
-                        <option>GATE Qualified</option>
-                        <option>Non-GATE Aspirant</option>
-                        <option>Direct Admission Inquiry</option>
+                    <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                    <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Contact Number"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                    <select
+                    name="qualification"
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none text-gray-600">
+                    <option>GATE Qualified</option>
+                    <option>Non-GATE Aspirant</option>
+                    <option>Direct Admission Inquiry</option>
                     </select>
-                    <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">Get Expert Advice</button>
+
+                    <button
+                    type="submit"
+                    class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">
+                    Get Expert Advice
+                    </button>
                 </div>
             </form>
+
         </div>
     </div>
 
@@ -377,11 +410,7 @@
             else nav.classList.remove('shadow-md');
         });
 
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert("Enquiry sent! Our technical experts will contact you shortly regarding M.Tech at " + (document.getElementById('interest').value || "Top Institutes") + ".");
-            toggleModal();
-        });
+        
         // ADD THIS FUNCTION BELOW
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
