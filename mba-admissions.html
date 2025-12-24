@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBA Admissions 2026 | Top 50+ B-Schools in India | CUECS</title>
+    <title>MBA Admissions 2026 | Top B-Schools in India | CUECS</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,28 +31,30 @@
         .modal.active { opacity: 1; visibility: visible; }
     </style>
 </head>
-<body class="bg-brand-light font-sans text-gray-800 overflow-x-hidden">
+<body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-4" id="navbar">
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
-                    <img src="logo.png" alt="CUECS Logo" class="h-12 w-auto object-contain mr-2">
+                    <img src="logo.png" alt="CUECS Logo" class="h-12 w-auto object-contain">
                     <span class="font-serif font-bold text-2xl text-brand-navy tracking-tight">CUECS</span>
                 </div>
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Home</a>
+                    <a href="index.html" class="text-brand-maroon font-semibold border-b-2 border-brand-maroon">Home</a>
                     <div class="relative group py-4">
-                        <button class="flex items-center text-brand-maroon font-bold border-b-2 border-brand-maroon transition">
+                        <button class="flex items-center text-slate-600 hover:text-brand-maroon font-bold text-sm tracking-widest uppercase transition-colors">
                             Admissions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4
+                                    opacity-0 invisible translate-y-4 transition-all duration-300
+                                    group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                             <a href="ug.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Undergraduate (UG)</a>
-                            <div class="relative group/pg"> <button class="w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
+                            <div class="relative group/pg"> 
+                                <button class="w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
                                     Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
                                 </button>
-                                
                                 <div class="absolute top-0 left-full ml-0 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 
                                             opacity-0 invisible -translate-x-4 
                                             group-hover/pg:opacity-100 group-hover/pg:visible group-hover/pg:translate-x-0 
@@ -66,100 +68,51 @@
                         </div>
                     </div>
                     <a href="services.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Services</a>
+                    <a href="exams.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Exams</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">About Us</a>
                     <a href="contact.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Contact</a>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-4">
-                    <button onclick="toggleSearch()" class="text-gray-600 hover:text-brand-maroon transition"><i data-lucide="search" class="w-6 h-6"></i></button>
-                    <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">Free Counselling</a>
+                    <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">
+                        Free Counselling
+                    </a>
                 </div>
 
-                <div class="md:hidden">
-                    <button onclick="toggleMobileMenu()" class="text-gray-600"><i data-lucide="menu" class="w-8 h-8"></i></button>
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-brand-maroon focus:outline-none">
+                        <i data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
                 </div>
             </div>
         </div>
+
         <div id="mobile-menu" class="hidden md:hidden bg-white rounded-t-2xl shadow-2xl border-t border-gray-200 overflow-hidden">
-
-            <!-- Home -->
-            <a href="index.html"
-            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
-                Home
-            </a>
-
-            <!-- Admissions -->
+            <a href="index.html" class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">Home</a>
             <div class="border-t border-gray-200">
-                <button
-                    onclick="document.getElementById('mobile-submenu').classList.toggle('hidden')"
-                    class="w-full flex justify-between items-center px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
+                <button onclick="document.getElementById('mobile-submenu').classList.toggle('hidden')" class="w-full flex justify-between items-center px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
                     <span>Admissions</span>
                     <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500"></i>
                 </button>
-
-                <!-- Submenu -->
                 <div id="mobile-submenu" class="hidden bg-gray-50">
-                    <a href="ug.html"
-                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-                        Undergraduate (UG)
-                    </a>
-                    <a href="mba-admissions.html"
-                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-                        MBA / PGDM / MMS
-                    </a>
-                    <a href="mtech.html"
-                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-                        M.Tech / B.Tech
-                    </a>
-                    <a href="law-admissions.html"
-                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-                        Law Programs
-                    </a>
-                    <a href="medical-admissions.html"
-                    class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-                        Medical Sciences
-                    </a>
+                    <a href="ug.html" class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">Undergraduate (UG)</a>
+                    <a href="mba-admissions.html" class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">MBA / PGDM / MMS</a>
+                    <a href="mtech.html" class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">M.Tech / B.Tech</a>
+                    <a href="law-admissions.html" class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">Law Programs</a>
+                    <a href="medical-admissions.html" class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">Medical Sciences</a>
                 </div>
             </div>
-
-            <!-- Services -->
-            <a href="services.html"
-            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-                Services
-            </a>
-            <a href="exams.html"
-            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-                Exams
-            </a>
-            <a href="about.html"
-            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-                About Us
-            </a>
-            <!-- Contact -->
-            <a href="contact.html"
-            class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-                Contact
-            </a>
-
-            <!-- CTA Button -->
-            <div class="border-t border-gray-200 px-6 py-6">
-                <button onclick="toggleSearch()"
-                        class="w-full flex items-center justify-center gap-2
-                            bg-gradient-to-r from-brand-maroon to-brand-navy
-                            text-white px-6 py-3 rounded-full
-                            font-semibold tracking-wide
-                            shadow-lg hover:shadow-xl hover:scale-[1.02]
-                            transition-all duration-300">
-                    Search B-Schools
-                </button>
-            </div>
+            <a href="services.html" class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">Services</a>
+            <a href="exams.html" class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">Exams</a>
+            <a href="about.html" class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">About Us</a>
+            <a href="contact.html" class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">Contact</a>
         </div>
-
     </nav>
 
     <header class="relative pt-32 pb-20 hero-gradient text-white text-center overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4">
-            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6" data-aos="zoom-in">India's Top 50 B-Schools</h1>
+            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6" data-aos="zoom-in">India's Top B-Schools</h1>
             <p class="text-xl text-brand-goldLight font-medium" data-aos="fade-up" data-aos-delay="200">
                 Guaranteed admission guidance for the batch of 2026-2028. Profile evaluation and management quota experts.
             </p>
@@ -167,7 +120,90 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 py-16">
-        
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center gap-3">
+            <i data-lucide="zap" class="text-brand-maroon"></i> SNAP Excellence
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <script>
+                const collegesSnap = [
+                    { name: "SIBM Pune", loc: "Pune", pkg: "28.1 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
+                    { name: "SCMHRD Pune", loc: "Pune", pkg: "23.7 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
+                    { name: "SIIB Pune", loc: "Pune", pkg: "13.1 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
+                    { name: "SIBM Bangalore", loc: "Bangalore", pkg: "14.5 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" }
+                ];
+                document.write(collegesSnap.map(c => `
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="${c.img}?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                            <div class="absolute top-4 right-4 bg-brand-maroon text-brand-gold px-3 py-1 rounded-full text-xs font-bold shadow-lg">Avg: ${c.pkg}</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-brand-navy mb-1">${c.name}</h3>
+                            <p class="text-sm text-gray-500 mb-4"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-3 bg-white border-2 border-brand-maroon text-brand-maroon font-bold rounded-xl hover:bg-brand-maroon hover:text-white transition">Admission Details</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center gap-3">
+            <i data-lucide="shield" class="text-brand-maroon"></i> MAH-CET Prime
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <script>
+                const collegesMah = [
+                    { name: "JBIMS Mumbai", loc: "Mumbai", pkg: "28.0 LPA", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
+                    { name: "SIMSREE Mumbai", loc: "Mumbai", pkg: "15.2 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "Welingkar (WeSchool)", loc: "Mumbai", pkg: "12.5 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
+                    { name: "PUMBA Pune", loc: "Pune", pkg: "9.2 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" }
+                ];
+                document.write(collegesMah.map(c => `
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="${c.img}?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                            <div class="absolute top-4 right-4 bg-brand-maroon text-brand-gold px-3 py-1 rounded-full text-xs font-bold shadow-lg">Avg: ${c.pkg}</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-brand-navy mb-1">${c.name}</h3>
+                            <p class="text-sm text-gray-500 mb-4"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-3 bg-white border-2 border-brand-maroon text-brand-maroon font-bold rounded-xl hover:bg-brand-maroon hover:text-white transition">Admission Details</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center gap-3">
+            <i data-lucide="landmark" class="text-brand-maroon"></i> IBSAT - ICFAI Network
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <script>
+                const collegesIbsat = [
+                    { name: "ICFAI (Hyderabad)", loc: "Hyderabad", pkg: "10.4 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
+                    { name: "ICFAI (Dehradun)", loc: "Dehradun", pkg: "6.5 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
+                    { name: "ICFAI (Mumbai)", loc: "Mumbai", pkg: "8.2 LPA", img: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3" },
+                    { name: "ICFAI (Bangalore)", loc: "Bangalore", pkg: "7.5 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
+                    { name: "ICFAI (Pune)", loc: "Pune", pkg: "7.2 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "ICFAI (Ahmedabad)", loc: "Ahmedabad", pkg: "7.1 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" }
+                ];
+                document.write(collegesIbsat.map(c => `
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="${c.img}?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                            <div class="absolute top-4 right-4 bg-brand-maroon text-brand-gold px-3 py-1 rounded-full text-xs font-bold shadow-lg">Avg: ${c.pkg}</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-brand-navy mb-1">${c.name}</h3>
+                            <p class="text-sm text-gray-500 mb-4"><i data-lucide="map-pin" class="w-3 h-3 inline"></i> ${c.loc}</p>
+                            <button onclick="toggleModal('${c.name}')" class="w-full py-3 bg-white border-2 border-brand-maroon text-brand-maroon font-bold rounded-xl hover:bg-brand-maroon hover:text-white transition">Admission Details</button>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+
         <h2 class="text-3xl font-serif font-bold text-brand-navy mb-8 flex items-center gap-3">
             <i data-lucide="map" class="text-brand-maroon"></i> North India - Top Tier
         </h2>
@@ -175,17 +211,20 @@
             <script>
                 const collegesNorth = [
                     { name: "FMS Delhi", loc: "New Delhi", pkg: "34 LPA", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
+                    { name: "IIM Lucknow", loc: "Lucknow", pkg: "32 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
                     { name: "MDI Gurgaon", loc: "Gurgaon", pkg: "27 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
+                    { name: "IIFT Delhi", loc: "New Delhi", pkg: "29 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
                     { name: "IMI New Delhi", loc: "Delhi", pkg: "17 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
                     { name: "IMT Ghaziabad", loc: "Ghaziabad", pkg: "17 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "IIM Rohtak", loc: "Rohtak", pkg: "19 LPA", pkg: "19 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
                     { name: "LBSIM Delhi", loc: "Delhi", pkg: "12 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
                     { name: "FORE School", loc: "Delhi", pkg: "14 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "Jaipuria Noida", loc: "Noida", pkg: "11 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
                     { name: "Amity Business School", loc: "Noida", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
                     { name: "BIMTECH Greater Noida", loc: "Noida", pkg: "11 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" },
-                    { name: "Jaipuria Institute", loc: "Lucknow/Noida", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
-                    { name: "LPU Business School", loc: "Punjab", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3" }
+                    { name: "SRCC GBO", loc: "Delhi", pkg: "12 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
+                    { name: "Great Lakes Gurgaon", loc: "Gurgaon", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" }
                 ];
-                
                 document.write(collegesNorth.map(c => `
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
                         <div class="h-48 relative overflow-hidden">
@@ -208,23 +247,21 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <script>
                 const collegesWest = [
-                    { name: "JBIMS Mumbai", loc: "Mumbai", pkg: "28 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
+                    { name: "IIM Ahmedabad", loc: "Ahmedabad", pkg: "35 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "NMIMS Mumbai", loc: "Mumbai", pkg: "26 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
                     { name: "SPJIMR Mumbai", loc: "Mumbai", pkg: "33 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
-                    { name: "SIBM Pune", loc: "Pune", pkg: "28 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
-                    { name: "SIMSREE Mumbai", loc: "Mumbai", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
-                    { name: "Welingkar (WeSchool)", loc: "Mumbai", pkg: "12 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "NITIE (IIM Mumbai)", loc: "Mumbai", pkg: "31 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "GIM Goa", loc: "Goa", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
                     { name: "KJ Somaiya", loc: "Mumbai", pkg: "13 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
-                    { name: "PUMBA Pune", loc: "Pune", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
-                    { name: "Indira Institute", loc: "Pune", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
-                    { name: "Balaji Institute (BIMM)", loc: "Pune", pkg: "8.5 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" },
+                    { name: "IRMA Anand", loc: "Anand", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "MICA Ahmedabad", loc: "Ahmedabad", pkg: "19 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "NL Dalmia", loc: "Mumbai", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
                     { name: "MET Mumbai", loc: "Mumbai", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
                     { name: "FLAME University", loc: "Pune", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3" },
-                    { name: "SCMHRD Pune", loc: "Pune", pkg: "23 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
-                    { name: "NL Dalmia", loc: "Mumbai", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
-                    { name: "MIT World Peace Univ", loc: "Pune", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" }
+                    { name: "Balaji Institute (BIMM)", loc: "Pune", pkg: "8.5 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" },
+                    { name: "ITM Navi Mumbai", loc: "Mumbai", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
+                    { name: "UBS Mumbai", loc: "Mumbai", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" }
                 ];
-                
                 document.write(collegesWest.map(c => `
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
                         <div class="h-48 relative overflow-hidden">
@@ -247,23 +284,21 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <script>
                 const collegesSouth = [
-                    { name: "ISB Hyderabad", loc: "Hyderabad", pkg: "34 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "IIM Bangalore", loc: "Bangalore", pkg: "35 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
+                    { name: "IIM Kozhikode", loc: "Calicut", pkg: "31 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
+                    { name: "ISB Hyderabad", loc: "Hyderabad", pkg: "34 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "TAPMI Manipal", loc: "Manipal", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
                     { name: "Christ University", loc: "Bangalore", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
                     { name: "Great Lakes Chennai", loc: "Chennai", pkg: "18 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
                     { name: "Alliance University", loc: "Bangalore", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
                     { name: "XIME Bangalore", loc: "Bangalore", pkg: "10 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
-                    { name: "SIBM Bangalore", loc: "Bangalore", pkg: "13 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "LIBA Chennai", loc: "Chennai", pkg: "11 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
                     { name: "IFMR Krea University", loc: "Sri City", pkg: "13.5 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
                     { name: "IMT Hyderabad", loc: "Hyderabad", pkg: "12 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" },
-                    { name: "Welingkar Bangalore", loc: "Bangalore", pkg: "11 LPA", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655" },
                     { name: "PES University", loc: "Bangalore", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3" },
-                    { name: "SRM School of Mgmt", loc: "Chennai", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
-                    { name: "Symbiosis Hyderabad", loc: "Hyderabad", pkg: "9 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
+                    { name: "MYRA School of Business", loc: "Mysore", pkg: "8.5 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "Jain University", loc: "Bangalore", pkg: "7.5 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" }
                 ];
-                
                 document.write(collegesSouth.map(c => `
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
                         <div class="h-48 relative overflow-hidden">
@@ -286,18 +321,17 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <script>
                 const collegesEast = [
-                    { name: "XLRI Jamshedpur", loc: "Jamshedpur", pkg: "33 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "IIM Calcutta", loc: "Kolkata", pkg: "35 LPA", img: "https://images.unsplash.com/photo-1525921429624-479b6a29d84c" },
+                    { name: "XLRI Jamshedpur", loc: "Jamshedpur", pkg: "33 LPA", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
                     { name: "XIM University", loc: "Bhubaneswar", pkg: "20 LPA", img: "https://images.unsplash.com/photo-1562774053-701939374585" },
                     { name: "IIM Ranchi", loc: "Ranchi", pkg: "17 LPA", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d50c148" },
-                    { name: "IIM Raipur", loc: "Raipur", pkg: "18 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
-                    { name: "IIT Kharagpur (VGSOM)", loc: "Kharagpur", pkg: "22 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
+                    { name: "IIM Shillong", loc: "Shillong", pkg: "26 LPA", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1" },
                     { name: "IMI Bhubaneswar", loc: "Bhubaneswar", pkg: "11 LPA", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644" },
-                    { name: "Jaipuria Indore", loc: "Indore", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
-                    { name: "IIM Sambalpur", loc: "Odisha", pkg: "15 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" },
-                    { name: "Techno India (TIU)", loc: "Kolkata", pkg: "6.5 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" }
+                    { name: "KIIT School of Mgmt", loc: "Bhubaneswar", pkg: "9.5 LPA", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f" },
+                    { name: "Globsyn Business School", loc: "Kolkata", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" },
+                    { name: "Techno India (TIU)", loc: "Kolkata", pkg: "6.5 LPA", img: "https://images.unsplash.com/photo-1498243639351-66d8f81763a5" },
+                    { name: "Birla Global University", loc: "Bhubaneswar", pkg: "8 LPA", img: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0" }
                 ];
-                
                 document.write(collegesEast.map(c => `
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 group" data-aos="fade-up">
                         <div class="h-48 relative overflow-hidden">
@@ -360,7 +394,7 @@
             <button onclick="toggleSearch()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
             <h3 class="text-2xl font-bold text-brand-navy mb-4">Find Your B-School</h3>
             <div class="flex gap-2">
-                <input type="text" placeholder="Ex: SIBM, NMIMS, MBA..." class="flex-1 px-5 py-4 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-brand-maroon outline-none">
+                <input type="text" id="search-input-box" placeholder="Ex: SIBM, NMIMS, MBA..." class="flex-1 px-5 py-4 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-brand-maroon outline-none">
                 <button class="bg-brand-maroon text-white px-8 rounded-xl font-bold">Search</button>
             </div>
         </div>
@@ -369,16 +403,44 @@
     <div id="enquireModal" class="fixed inset-0 z-[100] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300">
         <div class="bg-white rounded-2xl w-full max-w-md p-6 relative shadow-2xl">
             <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
-            <h3 class="text-2xl font-bold text-brand-navy mb-1">MBA Enquiry</h3>
+            <h3 id="modalTitle" class="text-2xl font-bold text-brand-navy mb-1">MBA Enquiry</h3>
             <p class="text-sm text-gray-500 mb-6">Eligible for 2026-28 batch?</p>
-            <form id="contactForm">
-                <input type="text" id="interest" hidden>
+            <form
+                id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                >
+
+                <!-- Web3Forms access key -->
+                <input type="hidden" name="access_key" value="89435dad-4091-4b68-b211-73a34fe94504">
+                <input type="hidden" name="redirect" value="https://cuecs01.github.io/.com/mba-admissions.html?success=true">
+
+                <!-- College / Interest -->
+                <input type="hidden" name="college" id="interest">
+
                 <div class="space-y-4">
-                    <input type="text" placeholder="Full Name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                    <input type="tel" placeholder="Contact Number" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                    <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">Book Free Counselling</button>
+                    <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                    <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Contact Number"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                    <button
+                    type="submit"
+                    class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">
+                    Book Free Counselling
+                    </button>
                 </div>
             </form>
+
         </div>
     </div>
 
@@ -396,11 +458,6 @@
         function toggleSearch() { document.getElementById('search-modal').classList.toggle('active'); }
         function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
 
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert("Thank you! CUECS consultants will contact you shortly regarding " + (document.getElementById('interest').value || "MBA Admissions") + ".");
-            toggleModal();
-        });
 
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
@@ -408,5 +465,12 @@
             else nav.classList.remove('shadow-md');
         });
     </script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("success") === "true") {
+            alert("Thank you! Your MBA enquiry has been sent successfully.");
+        }
+    </script>
+
 </body>
 </html>
