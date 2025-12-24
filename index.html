@@ -156,6 +156,26 @@
         #mobile-menu {
             transition: height 0.3s ease-in-out;
         }
+        /* Prevents the 'wobble' and side-scrolling on mobile */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Forces images to never exceed their container width */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjusts padding for mobile to keep text away from edges */
+        @media (max-width: 768px) {
+            .max-w-7xl, .max-w-5xl {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
+            }
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden">
@@ -188,33 +208,21 @@
                             
                             <!-- Nested PG Dropdown -->
                         <div class="relative">
-                            <button
-                                class="peer w-full flex justify-between items-center px-6 py-3
-                                    text-sm font-semibold text-slate-700
-                                    hover:bg-brand-goldLight hover:text-brand-maroon transition">
-                                Postgraduate (PG)
-                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                            </button>
+                            
 
                             <!-- PG Submenu -->
-                            <div
-                                class="absolute top-0 left-full ml-2 w-56 bg-white shadow-2xl rounded-2xl
-                                    border border-slate-100 py-3
-                                    opacity-0 invisible -translate-x-4
-                                    transition-all duration-300
-                                    peer-hover:opacity-100 peer-hover:visible peer-hover:translate-x-0">
+                            
+                            <div class="relative group/pg"> <button class="w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
+                                    Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                </button>
                                 
-                                <a href="mba-admissions.html"
-                                class="block px-6 py-3 text-sm font-semibold text-slate-700
-                                        hover:bg-brand-goldLight hover:text-brand-maroon">
-                                    MBA / PGDM
-                                </a>
-
-                                <a href="mtech.html"
-                                class="block px-6 py-3 text-sm font-semibold text-slate-700
-                                        hover:bg-brand-goldLight hover:text-brand-maroon">
-                                    M.Tech Specialization
-                                </a>
+                                <div class="absolute top-0 left-full ml-0 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 
+                                            opacity-0 invisible -translate-x-4 
+                                            group-hover/pg:opacity-100 group-hover/pg:visible group-hover/pg:translate-x-0 
+                                            transition-all duration-300">
+                                    <a href="mba-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">MBA / PGDM</a>
+                                    <a href="mtech.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">M.Tech Specialization</a>
+                                </div>
                             </div>
                         </div>
 
