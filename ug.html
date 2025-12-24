@@ -348,11 +348,42 @@
             <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500"><i data-lucide="x" class="w-6 h-6"></i></button>
             <h3 class="text-2xl font-bold text-brand-navy mb-1 leading-tight" id="collegeName">B.Tech Admission Enquiry</h3>
             <p class="text-xs text-gray-500 mb-6">Eligible for JEE / State CET 2026?</p>
-            <form id="contactForm" class="space-y-4">
-                <input type="text" placeholder="Candidate Name" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                <input type="tel" placeholder="Contact Number" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
-                <button type="submit" class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">Get Eligibility Review</button>
+            <form
+                id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="space-y-4"
+                >
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="89435dad-4091-4b68-b211-73a34fe94504">
+
+                <!-- Selected College -->
+                <input type="hidden" name="college" id="collegeInterest">
+
+                <!-- Optional clean redirect -->
+                <input type="hidden" name="redirect" value="https://yourwebsite.com/ug.html?success=true">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Candidate Name"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Contact Number"
+                    required
+                    class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-brand-maroon outline-none">
+
+                <button
+                    type="submit"
+                    class="w-full bg-brand-maroon text-white font-bold py-3 rounded-lg hover:bg-brand-navy transition">
+                    Get Eligibility Review
+                </button>
             </form>
+
         </div>
     </div>
 
@@ -365,8 +396,11 @@
         function toggleModal(college = 'UG B.Tech Admissions') {
             const modal = document.getElementById('enquireModal');
             modal.classList.toggle('hidden');
+
             document.getElementById('collegeName').innerText = college;
+            document.getElementById('collegeInterest').value = college;
         }
+
 
         function toggleSearch() { document.getElementById('search-modal').classList.toggle('active'); }
 
@@ -376,12 +410,7 @@
             else nav.classList.remove('shadow-md');
         });
 
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert("Thank you! CUECS Engineering team will contact you shortly.");
-            toggleModal();
-
-        });
+        
         // ADD THIS FUNCTION BELOW
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
