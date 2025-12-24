@@ -1,753 +1,358 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <title>About CUECS | Your Career Architects</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-   
-
+    
     <script>
-
         tailwind.config = {
-
             theme: {
-
                 extend: {
-
                     colors: {
-
                         brand: {
-
                             gold: '#D4AF37',
-
                             goldLight: '#F3E5AB',
-
                             maroon: '#800000',
-
                             navy: '#000080',
-
                             dark: '#0f172a',
-
                             light: '#f8fafc'
-
                         }
-
                     },
-
                     fontFamily: {
-
                         serif: ['Playfair Display', 'serif'],
-
                         sans: ['Inter', 'sans-serif'],
-
                     }
-
                 }
-
             }
-
         }
-
     </script>
-
     <style>
-
         .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
-
         .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
-
-        /* Prevents the 'wobble' and side-scrolling on mobile */
-
-        html, body {
-
-            max-width: 100%;
-
-            overflow-x: hidden;
-
-            position: relative;
-
-        }
-
-
-
-        /* Forces images to never exceed their container width */
-
-        img {
-
-            max-width: 100%;
-
-            height: auto;
-
-        }
-
-
-
-        /* Adjusts padding for mobile to keep text away from edges */
-
-        @media (max-width: 768px) {
-
-            .max-w-7xl, .max-w-5xl {
-
-                padding-left: 1.5rem !important;
-
-                padding-right: 1.5rem !important;
-
-            }
-
-        }
-
     </style>
-
 </head>
-
-<body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden">
-
+<body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden pt-20 md:pt-0">
 
 
     <!-- ================= NAVBAR ================= -->
-
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <div class="flex justify-between items-center h-20">
-
                 <!-- Logo -->
-
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
-
                     <img src="logo.png" alt="CUECS Logo" class="h-12 w-auto object-contain">
-
                     <span class="font-serif font-bold text-2xl text-brand-navy tracking-tight">CUECS</span>
-
                 </div>
 
-
-
                 <!-- Desktop Menu -->
-
                 <div class="hidden md:flex space-x-8 items-center">
-
                     <a href="index.html" class="text-brand-maroon font-semibold border-b-2 border-brand-maroon">Home</a>
-
-                   
-
+                    
                     <!-- Admissions Dropdown -->
-
                     <div class="relative group py-4">
-
                         <button class="flex items-center text-slate-600 hover:text-brand-maroon font-bold text-sm tracking-widest uppercase transition-colors">
-
                             Admissions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
-
                         </button>
-
-                       
-
+                        
                         <div class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-2xl border border-slate-100 py-4
-
                                     opacity-0 invisible translate-y-4 transition-all duration-300
-
                                     group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
 
-
-
                             <a href="ug.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Undergraduate (UG)</a>
-
-                           
-
+                            
                             <!-- Nested PG Dropdown -->
-
                         <div class="relative">
-
-                           
-
-
+                            
 
                             <!-- PG Submenu -->
-
-                           
-
+                            
                             <div class="relative group/pg"> <button class="w-full flex justify-between items-center px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">
-
                                     Postgraduate (PG) <i data-lucide="chevron-right" class="w-4 h-4"></i>
-
                                 </button>
-
-                               
-
-                                <div class="absolute top-0 left-full ml-0 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3
-
-                                            opacity-0 invisible -translate-x-4
-
-                                            group-hover/pg:opacity-100 group-hover/pg:visible group-hover/pg:translate-x-0
-
+                                
+                                <div class="absolute top-0 left-full ml-0 w-56 bg-white shadow-2xl rounded-2xl border border-slate-100 py-3 
+                                            opacity-0 invisible -translate-x-4 
+                                            group-hover/pg:opacity-100 group-hover/pg:visible group-hover/pg:translate-x-0 
                                             transition-all duration-300">
-
                                     <a href="mba-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">MBA / PGDM</a>
-
                                     <a href="mtech.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon">M.Tech Specialization</a>
-
                                 </div>
-
                             </div>
-
                         </div>
-
-
-
 
 
                             <a href="law-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Legal Excellence</a>
-
                             <a href="medical-admissions.html" class="block px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-goldLight hover:text-brand-maroon transition">Medical Sciences</a>
-
                         </div>
-
                     </div>
-
-                   
-
+                    
                     <a href="services.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Services</a>
-
                     <a href="exams.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Exams</a>
-
                     <a href="about.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">About Us</a>
-
                     <a href="contact.html" class="text-gray-600 hover:text-brand-maroon font-medium transition">Contact</a>
-
                 </div>
-
-
 
                 <!-- Icons & CTA -->
-
                 <div class="hidden md:flex items-center space-x-4">
-
-                   
-
+                    
                     <a href="contact.html" class="bg-brand-maroon text-brand-gold px-6 py-2 rounded-full font-semibold hover:bg-brand-navy transition shadow-lg transform hover:-translate-y-0.5">
-
                         Free Counselling
-
                     </a>
-
                 </div>
-
-
 
                 <!-- Mobile menu button -->
-
                 <div class="md:hidden flex items-center">
-
                     <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-brand-maroon focus:outline-none">
-
                         <i data-lucide="menu" class="w-8 h-8"></i>
-
                     </button>
-
                 </div>
-
             </div>
-
         </div>
-
-
 
         <!-- Mobile Menu Panel -->
-
         <div id="mobile-menu" class="hidden md:hidden bg-white rounded-t-2xl shadow-2xl border-t border-gray-200 overflow-hidden">
 
-
-
             <!-- Home -->
-
             <a href="index.html"
-
             class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
-
                 Home
-
             </a>
-
-
 
             <!-- Admissions -->
-
             <div class="border-t border-gray-200">
-
                 <button
-
                     onclick="document.getElementById('mobile-submenu').classList.toggle('hidden')"
-
                     class="w-full flex justify-between items-center px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition">
-
                     <span>Admissions</span>
-
                     <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500"></i>
-
                 </button>
 
-
-
                 <!-- Submenu -->
-
                 <div id="mobile-submenu" class="hidden bg-gray-50">
-
                     <a href="ug.html"
-
                     class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-
                         Undergraduate (UG)
-
                     </a>
-
                     <a href="mba-admissions.html"
-
                     class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-
                         MBA / PGDM / MMS
-
                     </a>
-
                     <a href="mtech.html"
-
                     class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-
                         M.Tech / B.Tech
-
                     </a>
-
                     <a href="law-admissions.html"
-
                     class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-
                         Law Programs
-
                     </a>
-
                     <a href="medical-admissions.html"
-
                     class="block px-10 py-3 text-gray-600 hover:text-brand-maroon hover:bg-white transition">
-
                         Medical Sciences
-
                     </a>
-
                 </div>
-
             </div>
-
-
 
             <!-- Services -->
-
             <a href="services.html"
-
             class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-
                 Services
-
             </a>
-
             <a href="exams.html"
-
             class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-
                 Exams
-
             </a>
-
             <a href="about.html"
-
             class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-
                 About Us
-
             </a>
-
             <!-- Contact -->
-
             <a href="contact.html"
-
             class="block px-6 py-4 text-gray-700 font-semibold tracking-wide hover:bg-gray-100 transition border-t border-gray-200">
-
                 Contact
-
             </a>
 
-
-
-           
-
+            
         </div>
-
     </nav>
-
-   
-
-
+    
 
     <header class="relative hero-gradient text-white pt-40 pb-24 overflow-hidden">
-
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-
         <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6" data-aos="fade-up">Precision in <br><span class="text-brand-gold">Career Planning</span></h1>
-
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold mb-6" data-aos="fade-up">Precision in <br><span class="text-brand-gold">Career Planning</span></h1>
             <p class="text-xl text-brand-goldLight max-w-2xl mx-auto font-medium" data-aos="fade-up" data-aos-delay="100">
-
                 Since 2012, CUECS has been India's elite gateway for MBA, Law, and Medical aspirants.
-
             </p>
-
         </div>
-
     </header>
 
-
-
     <section class="relative z-20 -mt-12 max-w-6xl mx-auto px-4">
-
         <div class="bg-white rounded-2xl shadow-2xl grid grid-cols-2 md:grid-cols-4 p-8 text-center divide-x divide-gray-100" data-aos="zoom-in">
-
             <div class="px-4">
-
                 <p class="text-4xl font-bold text-brand-maroon">12+</p>
-
                 <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Years Legacy</p>
-
             </div>
-
             <div class="px-4">
-
                 <p class="text-4xl font-bold text-brand-maroon">1k+</p>
-
                 <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Global Admits</p>
-
             </div>
-
             <div class="px-4">
-
                 <p class="text-4xl font-bold text-brand-maroon">85+</p>
-
                 <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Top Partners</p>
-
             </div>
-
             <div class="px-4">
-
                 <p class="text-4xl font-bold text-brand-maroon">100%</p>
-
                 <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Ethics Rate</p>
-
             </div>
-
         </div>
-
     </section>
 
-
-
     <main class="max-w-7xl mx-auto px-4 py-24">
-
         <div class="flex flex-col lg:flex-row items-center gap-16 mb-32">
-
             <div class="lg:w-1/2 relative" data-aos="fade-right">
-
                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl border-4 border-white aspect-square object-cover">
-
                 <div class="absolute -bottom-6 -right-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl">
-
                     <p class="text-xs font-bold uppercase text-brand-gold">Headquarters</p>
-
                     <p class="text-xl font-serif">Pune, India</p>
-
                 </div>
-
             </div>
-
             <div class="lg:w-1/2" data-aos="fade-left">
-
                 <h4 class="text-brand-maroon font-bold uppercase tracking-widest text-sm mb-2">Who We Are</h4>
-
                 <h2 class="text-4xl font-serif font-bold text-brand-navy mb-6">Your Strategic Partner in Higher Education</h2>
-
                 <div class="space-y-4 text-gray-600 text-lg">
-
                     <p>CUECS is a premier consultancy focused on the <strong>Triad of Excellence:</strong> MBA, Law, and Medical Admissions.</p>
-
                     <p>We don't just fill forms. We analyze profiles, build career roadmaps, and bridge the gap between talented students and India's top-tier institutions.</p>
-
                     <ul class="space-y-2">
-
                         <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-brand-gold w-5 h-5"></i> Unbiased College Mapping</li>
-
                         <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-brand-gold w-5 h-5"></i> End-to-End Admission Support</li>
-
                         <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-brand-gold w-5 h-5"></i> Specialized Quota Guidance</li>
-
                     </ul>
-
                 </div>
-
             </div>
-
         </div>
-
-
 
         <div class="text-center mb-32">
-
             <h2 class="text-3xl font-serif font-bold text-brand-navy mb-12">Core Expertise</h2>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
                 <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-brand-gold group hover:-translate-y-2 transition duration-300">
-
                     <i data-lucide="graduation-cap" class="w-12 h-12 text-brand-maroon mx-auto mb-4"></i>
-
                     <h3 class="font-bold text-xl mb-2">MBA / PGDM</h3>
-
                     <p class="text-sm text-gray-500">IIMs, XLRI, and Top Private B-Schools profile evaluation.</p>
-
                 </div>
-
                 <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-brand-gold group hover:-translate-y-2 transition duration-300">
-
                     <i data-lucide="scale" class="w-12 h-12 text-brand-maroon mx-auto mb-4"></i>
-
                     <h3 class="font-bold text-xl mb-2">Legal Studies</h3>
-
                     <p class="text-sm text-gray-500">Strategic entry into NLUs, SLS, and Global Law Schools.</p>
-
                 </div>
-
                 <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-brand-gold group hover:-translate-y-2 transition duration-300">
-
                     <i data-lucide="stethoscope" class="w-12 h-12 text-brand-maroon mx-auto mb-4"></i>
-
                     <h3 class="font-bold text-xl mb-2">Medical Sciences</h3>
-
                     <p class="text-sm text-gray-500">MBBS & PG guidance for India and International Universities.</p>
-
                 </div>
-
             </div>
-
         </div>
-
-
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32 text-white text-center">
-
             <div class="bg-brand-navy p-12 rounded-3xl" data-aos="fade-up">
-
                 <h3 class="text-2xl font-bold mb-4 text-brand-gold">The Mission</h3>
-
                 <p class="text-gray-300 italic">"To provide ethical, data-driven guidance that ensures high career ROI for every student."</p>
-
             </div>
-
             <div class="bg-brand-maroon p-12 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
-
                 <h3 class="text-2xl font-bold mb-4 text-brand-gold">The Vision</h3>
-
                 <p class="text-gray-300 italic">"To be Asia's most reliable educational bridge, recognized for transparency and success."</p>
-
             </div>
-
         </div>
-
-
 
         <div class="bg-white rounded-3xl p-12 text-center shadow-xl border border-gray-100" data-aos="zoom-in">
-
             <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-navy mb-6">Start Your Success Story</h2>
-
             <p class="text-gray-500 mb-10 text-lg max-w-xl mx-auto">Get a personalized admission roadmap from the experts who have shaped 1000+ careers.</p>
-
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-
                 <a href="contact.html" class="bg-brand-maroon text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-brand-navy transition">Book Free Session</a>
-
                 <a href="tel:+919115262828" class="border-2 border-brand-maroon text-brand-maroon px-10 py-4 rounded-full font-bold hover:bg-brand-maroon hover:text-white transition">Call Admissions</a>
-
             </div>
-
         </div>
-
     </main>
 
-
-
     <footer class="bg-brand-dark text-white pt-20 pb-8 border-t-4 border-brand-gold">
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-
                 <div>
-
                     <div class="flex items-center mb-6">
-
                         <img src="logo.png" alt="CUECS Logo" class="h-10 w-auto bg-white p-1 rounded mr-2">
-
                         <span class="font-serif font-bold text-2xl tracking-tight">CUECS</span>
-
                     </div>
-
                     <p class="text-gray-400 text-sm leading-relaxed">India's trusted bridge to prestigious universities for MBA, Law, and Medical Sciences.</p>
-
                 </div>
-
                 <div>
-
                     <h4 class="font-bold text-lg mb-6 text-brand-gold">Quick Links</h4>
-
                     <ul class="space-y-4 text-sm text-gray-400">
-
                         <li><a href="index.html" class="hover:text-white">Home</a></li>
-
                         <li><a href="services.html" class="hover:text-white">Our Services</a></li>
-
                         <li><a href="contact.html" class="hover:text-white">Consultation</a></li>
-
                     </ul>
-
                 </div>
-
                 <div>
-
                     <h4 class="font-bold text-lg mb-6 text-brand-gold">Admissions</h4>
-
                     <ul class="space-y-4 text-sm text-gray-400">
-
                         <li><a href="mba-admissions.html" class="hover:text-white">MBA / PGDM</a></li>
-
                         <li><a href="law-admissions.html" class="hover:text-white">Law Admissions</a></li>
-
                         <li><a href="medical-admissions.html" class="hover:text-white">Medical Science</a></li>
-
                     </ul>
-
                 </div>
-
                 <div>
-
                     <h4 class="font-bold text-lg mb-6 text-brand-gold">HQ Office</h4>
-
                     <ul class="space-y-4 text-sm text-gray-400">
-
                         <li class="flex items-start">
-
                             <i data-lucide="map-pin" class="w-5 h-5 mr-3 text-brand-maroon"></i>
-
                             <span>Pune, Maharashtra (HQ)<br>Mumbai • Delhi • Kanpur</span>
-
                         </li>
-
                         <li class="flex items-start">
-
                             <i data-lucide="phone" class="w-5 h-5 mr-3 text-brand-maroon"></i>
-
                             <a href="tel:+919115262828" class="hover:text-white">+91 91152 62828</a>
-
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
             <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-
                 &copy; 2025 CUECS Admissions Guidance. All Rights Reserved.
-
             </div>
-
         </div>
-
     </footer>
 
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
-
         lucide.createIcons();
-
         AOS.init({ duration: 1000, once: true });
 
-
-
         window.addEventListener('scroll', function() {
-
             const navbar = document.getElementById('navbar');
-
             if (window.scrollY > 50) {
-
                 navbar.classList.add('shadow-md');
-
                 navbar.classList.remove('py-4');
-
             } else {
-
                 navbar.classList.remove('shadow-md');
-
                 navbar.classList.add('py-4');
-
             }
-
         });
-
         // ADD THIS FUNCTION BELOW
-
         function toggleMobileMenu() {
-
             const menu = document.getElementById('mobile-menu');
-
             menu.classList.toggle('hidden');
-
         }
-
-       
-
+        
         window.addEventListener('scroll', function() {
-
             const navbar = document.getElementById('navbar');
-
             if (window.scrollY > 50) {
-
                 navbar.classList.add('shadow-md');
-
             } else {
-
                 navbar.classList.remove('shadow-md');
-
             }
-
         });
-
     </script>
-
 </body>
-
 </html>
