@@ -34,6 +34,26 @@
     <style>
         .hero-gradient { background: linear-gradient(135deg, #000080 0%, #800000 100%); }
         .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        /* Prevents the 'wobble' and side-scrolling on mobile */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Forces images to never exceed their container width */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjusts padding for mobile to keep text away from edges */
+        @media (max-width: 768px) {
+            .max-w-7xl, .max-w-5xl {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
+            }
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-brand-light overflow-x-hidden">
